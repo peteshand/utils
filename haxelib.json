@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"tags": ["utils", "function"],
 	"description": "library that contains various utility classes",
-	"version": "1.0.0",
-	"releasenote": "initial release",
+	"version": "1.0.1",
+	"releasenote": "remove try catch in functionUtil",
 	"contributors": [ "p.j.shand" ],
 	"classPath": "src/"
 }
