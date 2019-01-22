@@ -8,28 +8,28 @@ import haxe.Constraints.Function;
  */
 class FunctionUtil
 {
-	public static function dispatch(callback:Function, params:Array<Dynamic>=null) 
+	public static function dispatch(callback:Function, params:Array<Dynamic>=null):Dynamic
 	{
 		//try {
 			if (params == null) {
-				callback();
-				return;
+				return callback();
 			}
 			switch (params.length) 
 			{
-				case 0 : callback();
-				case 1 : callback(params[0]);
-				case 2 : callback(params[0], params[1]);
-				case 3 : callback(params[0], params[1], params[2]);
-				case 4 : callback(params[0], params[1], params[2], params[3]);
-				case 5 : callback(params[0], params[1], params[2], params[3], params[4]);
-				case 6 : callback(params[0], params[1], params[2], params[3], params[4], params[5]);
-				case 7 : callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6]);
-				case 8 : callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7]);
-				case 9 : callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7], params[8]);
-				case 10 : callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7], params[8], params[9]);
+				case 0 : return callback();
+				case 1 : return callback(params[0]);
+				case 2 : return callback(params[0], params[1]);
+				case 3 : return callback(params[0], params[1], params[2]);
+				case 4 : return callback(params[0], params[1], params[2], params[3]);
+				case 5 : return callback(params[0], params[1], params[2], params[3], params[4]);
+				case 6 : return callback(params[0], params[1], params[2], params[3], params[4], params[5]);
+				case 7 : return callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6]);
+				case 8 : return callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7]);
+				case 9 : return callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7], params[8]);
+				case 10 : return callback(params[0], params[1], params[2], params[3], params[4], params[5], params[6], params[7], params[8], params[9]);
 				default:
 			}
+			return null;
 		//} catch (e:Dynamic){
 		//	throw "callback structure and array length do not match";
 		//}
