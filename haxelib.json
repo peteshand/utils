@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"tags": ["utils", "function"],
 	"description": "library that contains various utility classes",
-	"version": "1.0.2",
-	"releasenote": "return function return",
+	"version": "1.0.7",
+	"releasenote": "Add hash class",
 	"contributors": [ "p.j.shand" ],
 	"classPath": "src/"
 }
